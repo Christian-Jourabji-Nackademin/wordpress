@@ -1,1 +1,1 @@
-FROM wordpress_auto_chris:latest
+FROM tothechrist/wordpress_auto_chris:latest
