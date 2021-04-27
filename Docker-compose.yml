@@ -18,7 +18,7 @@ services:
     container_name: wordpress
     depends_on:
       - db
-    image: wordpress_ny:latest
+    image: wordpress_new:latest
     ports:
       - "8000:80"
     restart: always
@@ -27,9 +27,9 @@ services:
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
       WORDPRESS_DB_NAME: wordpress
-    volumes:
-      - .wordpress/themes:/var/www/html/wp-content/themes/
-      - .wordpress/plugins:/var/www/html/wp-content/plugins/
+    #volumes:
+     # - .wordpress/themes:/var/www/html/wp-content/themes/
+      #- .wordpress/plugins:/var/www/html/wp-content/plugins/
 
 
   phpmyadmin:
