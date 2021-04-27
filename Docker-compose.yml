@@ -18,7 +18,7 @@ services:
     container_name: wordpress
     depends_on:
       - db
-    image: wordpress:latest
+    image: wordpress_ny:latest
     ports:
       - "8000:80"
     restart: always
