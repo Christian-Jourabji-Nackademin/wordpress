@@ -68,7 +68,7 @@ spec:
       volumes:
       - name: db
         configMap:
-          name:  mydb
+          name: db
       - name: mysql-persistent-storage
         persistentVolumeClaim:
           claimName: mysql-pv-claim
