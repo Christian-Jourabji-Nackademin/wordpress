@@ -20,7 +20,7 @@ services:
       - db
     image: tothechrist/wordpress_auto_chris:latest
     ports:
-      - "8000:80"
+      - "80:80"
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
